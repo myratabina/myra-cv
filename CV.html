@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myra Tabina Artanty - CV</title>
+    <style>
+        /* Reset dan gaya dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #ffe5ed;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 5px 25px rgba(255, 182, 193, 0.3);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Header dengan foto */
+        header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+            border-bottom: 2px dashed #ffb6c1;
+            position: relative;
+            z-index: 1;
+            gap: 30px;
+        }
+        
+        .photo-container {
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #ffd1dc;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: #fff0f5;
+        }
+        
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .header-content {
+            flex: 1;
+        }
+        
+        h1 {
+            color: #d94f70;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #fff0f5;
+            padding: 10px 18px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        /* Bagian konten */
+        section {
+            margin-bottom: 35px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        h2 {
+            color: #d94f70;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ffe4e9;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2::before {
+            content: "🎀";
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        p, li {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        ul {
+            padding-left: 25px;
+        }
+        
+        .experience-item {
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 3px solid #ffb6c1;
+        }
+        
+        .experience-title {
+            font-weight: bold;
+            color: #d94f70;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .experience-duration {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        
+        .skill-item {
+            background-color: #ffd1dc;
+            color: #8a4b5c;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-3px);
+            background-color: #ffb6c1;
+        }
+        
+        /* Responsif */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 20px;
+            }
+            
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .photo-container {
+                width: 120px;
+                height: 120px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+            
+            .contact-item {
+                width: auto;
+            }
+            
+            .ribbon {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-item {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ribbon ribbon-1"></div>
+        <div class="ribbon ribbon-2"></div>
+        <div class="ribbon ribbon-3"></div>
+        
+        <header>
+            <div class="photo-container">
+                <img src="foto_formal_square.jpg" alt="Myra Tabina Artanty" class="profile-photo">
+            </div>
+            <div class="header-content">
+                <h1>MYRA TABINA ARTANTY</h1>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>+62 812-9694-9416</strong>
+                    </div>
+                    <div class="contact-item">
+                        <strong>myratabina2608@gmail.com</strong>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="personal-profile">
+            <h2>Personal Profile</h2>
+            <p>Saya adalah Mahasiswa Gunadarma dengan komunikasi yang baik dan semangat belajar yang tinggi. Memiliki keterampilan di bidang Teknologi Komputer. Berkomitmen untuk bekerja dengan teliti, disiplin, siap berkontribusi dalam lingkungan kerja profesional dan terus mengembangkan diri.</p>
+        </section>
+        
+        <section id="academic-profile">
+            <h2>Academic Profile</h2>
+            <div class="experience-item">
+                <div class="experience-title">SMAN 88 Jakarta</div>
+                <div class="experience-duration">2020-2023</div>
+            </div>
+        </section>
+        
+        <section id="organization-experience">
+            <h2>Organization and Experience</h2>
+            <div class="experience-item">
+                <div class="experience-title">Laboratory Assistant Gunadarma - Physics</div>
+                <div class="experience-duration">2025 - Sekarang</div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-title">UKM Gunadarma Esports</div>
+                <div class="experience-duration">2024 - Sekarang</div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-item">Dasar Desain Grafis</span>
+                <span class="skill-item">Microsoft Office</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">Blender</span>
+                <span class="skill-item">Komunikasi yang Baik</span>
+                <span class="skill-item">Manajemen Waktu</span>
+                <span class="skill-item">Teliti dan Pekerja Keras</span>
+                <span class="skill-item">Teamwork</span>
+                <span class="skill-item">Disiplin</span>
+                <span class="skill-item">Bertanggung Jawab</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
